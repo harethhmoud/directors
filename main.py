@@ -68,7 +68,7 @@ class DirectorMoviesNotifier:
             server.login(self.email_username, self.email_password)
             server.send_message(msg)
             server.quit()
-            print("Successfully sent email to %s:" % (msg['To']))
+            print("Successfully sent email to %s." % (msg['To']))
         except Exception as e:
             print("Failed to send email: %s" % str(e))
 
